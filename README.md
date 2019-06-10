@@ -25,9 +25,11 @@ python quantizer.py --dataset visualwakewords --arch efficientnet_bz
 
 ## 4. Results: MSCOCO minival
 
-TFLite model: XX.XX%
+TFLite model: 83.12%
 
-Pre-TFLite model with fake quantisation: YY.YY%
+Pre-TFLite model with fake quantisation: 83.22%
+
+See the `model` folder for serialised models and checkpoint information.
 
 ## Credit
 Authors: Royson Lee*, Edgar Liberis*, Nic Lane (* --- eq. contrib.)
