@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tensorflow = "==1.14.0-rc0"
+numpy = "*"
+"h5py" = "*"
+flatbuffers = "*"
+scikit-image = "*"
+pillow = "*"
+scikit-learn = "*"
+bitarray = "*"
+opencv-python-headless = "*"
+python-prctl = "*"
+toposort = "*"
+tqdm = "*"
+tensorpack = {editable = true,git = "https://github.com/tensorpack/tensorpack.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
