@@ -13,6 +13,7 @@ We use an EfficientNet family of models [1], whose depth and width (number of ch
  * < 250KB parameters (215'040 parameters at 8 bits per parameter)
  * < 60 MB multiply-adds (specifically, 11'100'528).
 
+See `model.png` for the layer arrangement.
 The model is quantised to 8-bit precision, using a customised version of `tf.contrib.quantize`. 
 
 ## 3. Running the model
@@ -25,9 +26,7 @@ python quantizer.py --dataset visualwakewords --arch efficientnet_bz
 
 ## 4. Results: MSCOCO minival
 
-TFLite model: 83.12%
-
-Pre-TFLite model with fake quantisation: 83.22%
+TFLite model: 83.35%
 
 See the `model` folder for serialised models and checkpoint information.
 
